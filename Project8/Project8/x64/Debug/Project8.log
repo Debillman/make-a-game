@@ -1,5 +1,0 @@
-﻿Project8.obj : error LNK2019: "struct Matrix3x3 __cdecl translation_matrix(float,float)" (?translation_matrix@@YA?AUMatrix3x3@@MM@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
-Project8.obj : error LNK2019: "struct Matrix3x3 __cdecl rotation_matrix(float)" (?rotation_matrix@@YA?AUMatrix3x3@@M@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
-Project8.obj : error LNK2019: "struct Matrix3x3 __cdecl multiply_matrices(struct Matrix3x3,struct Matrix3x3)" (?multiply_matrices@@YA?AUMatrix3x3@@U1@0@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
-Project8.obj : error LNK2019: "struct Vector3 __cdecl multiply_matrix_vector(struct Matrix3x3,struct Vector3)" (?multiply_matrix_vector@@YA?AUVector3@@UMatrix3x3@@U1@@Z)main 함수에서 참조되는 확인할 수 없는 외부 기호
-C:\Users\samsung\source\repos\Project8\x64\Debug\Project8.exe : fatal error LNK1120: 4개의 확인할 수 없는 외부 참조입니다.
