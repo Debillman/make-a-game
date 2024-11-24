@@ -1,0 +1,21 @@
+﻿  Project8.cpp
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(73,21): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(74,34): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(75,34): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(95,21): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(96,34): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(97,34): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(180,44): warning C4838: 'double'에서 'float'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(180,44): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(180,79): warning C4838: 'double'에서 'float'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(180,79): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(184,49): warning C4838: 'double'에서 'float'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(184,49): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(184,88): warning C4838: 'double'에서 'float'(으)로의 변환에는 축소 변환이 필요합니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(184,88): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(207,30): warning C4305: '-=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(208,30): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(209,30): warning C4305: '-=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(210,35): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\samsung\source\repos\Project8\Project8\Project8.cpp(211,35): warning C4305: '-=': 'double'에서 'float'(으)로 잘립니다.
+  Project8.vcxproj -> C:\Users\samsung\source\repos\Project8\x64\Debug\Project8.exe
