@@ -138,6 +138,7 @@ int main() {
 
     Screen screen;
     int running = 1; // 프로그램 실행 여부를 나타내는 플래그
+    int paused = 0;  // 회전 상태를 나타내는 플래그
     float angle1 = 0, angle2 = 0, angle3 = 0; // 각 객체의 자전 각도
     float orbitAngle2 = 0, orbitAngle3 = 0; // 각 객체의 공전 각도
 
@@ -186,24 +187,31 @@ int main() {
         // 화면 렌더링
         RenderScreen(&screen);
 
-        // 키 입력 처리
-        if (_kbhit()) { // 키보드 입력 감지
-            char key = _getch(); // 키 입력 받기
-            if (key == 27) { // ESC 키 (ASCII 27)
-                running = 0; // 루프 종료
+        if (_kbhit()) {
+            char key = _getch();
+            if (key == 27) { // ESC 키
+                running = 0;
                 break;
+            }
+            if (key == ' ') { // 스페이스바
+                paused = !paused;
+                if (paused) { // 정지 상태에서 각도 초기화
+                    orbitAngle2 = 0;
+                    orbitAngle3 = 0;
+                    angle1 = angle2 = angle3 = 0;
+                }
             }
         }
 
-        // 각도 업데이트
-        angle1 -= 2 * PI / (3 * 10); // 3초당 1바퀴 (반시계방향)
-        angle2 += 2 * PI / (2 * 10); // 2초당 1바퀴 (시계방향)
-        angle3 -= 2 * PI / 10; // 1초당 1바퀴 (반시계방향)
-        orbitAngle2 += 2 * PI / (3 * 10); // 3초당 1바퀴 (시계방향)
-        orbitAngle3 -= 2 * PI / (2 * 10); // 2초당 1바퀴 (반시계방향)
+        if (!paused) { // 회전 상태에서만 각도 업데이트
+            angle1 -= 2 * PI / (3 * 10);
+            angle2 += 2 * PI / (2 * 10);
+            angle3 -= 2 * PI / 10;
+            orbitAngle2 += 2 * PI / (3 * 10);
+            orbitAngle3 -= 2 * PI / (2 * 10);
+        }
 
-        // 루프 속도 조절
-        Sleep(100); // 100 밀리초 대기
+        Sleep(100);
     }
 
     return 0;
