@@ -1,24 +1,28 @@
-#include <stdio.h>
+﻿#include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
-#include <math.h>
-
+#include <conio.h>  // _kbhit(), _getch() 함수 사용을 위한 헤더
+#include <windows.h>
 // 상수 정의
 #define WIDTH 40
 #define HEIGHT 24
 #define FPS 30
 #define FRAME_TIME (1.0f / FPS)
 
-// 화면 버퍼 초기화 (char 크기를 2로 사용)
-char screen[HEIGHT][WIDTH * 2 + 1]; // 각 픽셀은 2개의 문자로 표현됨
+#include "ElfMath.h"
+#include "Elf2D.h"
+
+// 화면 버퍼 초기화 (각 픽셀을 2개의 문자로 표현)
+char screen[HEIGHT][WIDTH * 2 + 1];
 
 // 화면 지우기 함수
 void clearScreen() {
     for (int y = 0; y < HEIGHT; y++) {
         for (int x = 0; x < WIDTH; x++) {
-            screen[y][x * 2] = ' ';      // 첫 번째 문자 공간
-            screen[y][x * 2 + 1] = ' ';  // 두 번째 문자 공간
+            screen[y][x * 2] = ' ';      // 첫 번째 문자
+            screen[y][x * 2 + 1] = ' ';  // 두 번째 문자
         }
-        screen[y][WIDTH * 2] = '\0';      // 문자열 끝
+        screen[y][WIDTH * 2] = '\0';     // 문자열 끝
     }
 }
 
@@ -58,10 +62,10 @@ void displayScreen() {
 void GameLoop() {
     while (1) {
         clock_t start_time = clock();
-        
+
         clearScreen();
-        
-        // 삼각형을 그리기 위해 임시 선을 화면 중앙에 그리기
+
+        // (0,0)에서 (40,24)까지 선을 그리기
         drawLine(0.0f, 0.0f, WIDTH - 1.0f, HEIGHT - 1.0f, "@@");
 
         displayScreen();
