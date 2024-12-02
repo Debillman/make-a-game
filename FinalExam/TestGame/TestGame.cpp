@@ -9,8 +9,6 @@
 #define FPS 30
 #define FRAME_TIME (1.0f / FPS)
 
-#include "ElfMath.h"
-#include "Elf2D.h"
 
 // 화면 버퍼 초기화 (각 픽셀을 2개의 문자로 표현)
 char screen[HEIGHT][WIDTH * 2 + 1];
