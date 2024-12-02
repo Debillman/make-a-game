@@ -1,14 +1,12 @@
-﻿#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
-#include <conio.h>  // _kbhit(), _getch() 함수 사용을 위한 헤더
-#include <windows.h>
+#include <math.h>
+
 // 상수 정의
 #define WIDTH 40
 #define HEIGHT 24
 #define FPS 30
 #define FRAME_TIME (1.0f / FPS)
-
 
 // 화면 버퍼 초기화 (각 픽셀을 2개의 문자로 표현)
 char screen[HEIGHT][WIDTH * 2 + 1];
