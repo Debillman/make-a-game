@@ -3,8 +3,13 @@
 #include "ElfTime.h"
 #include "ElfObject.h"
 
-#define WIDTH 60
-#define HEIGHT 25
+#define WIDTH 40    // 가로 픽셀 개수
+#define HEIGHT 24   // 세로 픽셀 개수
+
+char screenBuffer[(WIDTH + 1) * 2 * HEIGHT];
+char screenWidth = WIDTH;
+char screenHeight = HEIGHT;
+
 
 void Initialize(GameObject_Line* obj, int objNum)
 {
@@ -96,10 +101,33 @@ void Render(GameObject_Line* obj, int objNum, char* Buf, int width, int height)
         Elf2DDrawLine((int)lineA.x, (int)lineA.y, (int)lineB.x, (int)lineB.y, Buf, width, height);
 }
 
+void Elf2DDrawline2(Point start, Point end, char draw_char) {
+    float dx = end.x - start.x;
+    float dy = end.y - start.y;
+    int steps = (fabs(dx) > fabs(dy)) ? fabs(dx) : fabs(dy);
+
+    float x_inc = dx / steps;
+    float y_inc = dy / steps;
+
+    float x = start.x;
+    float y = start.y;
+
+    for (int i = 0; i <= steps; i++) {
+        int screenWidth_x = (int)x;
+        int screenHeight_y = (int)y;
+
+        if (screenWidth_x >= 0 && screenWidth_x < WIDTH && screenHeight_y >= 0 && screenHeight_y < HEIGHT) {
+            screenBuffer[screenHeight_y * screenWidth + screenWidth_x] = draw_char;
+        }
+
+        x += x_inc;
+        y += y_inc;
+    }
+}
 
 // 게임 루프
 int main() {
-    int fps = 60;
+    int fps = 30;
     double frameTime = 1000.0 / fps;
 
     // 전역 변수로 스크린 버퍼 선언

@@ -1,0 +1,13 @@
+﻿  Elf2D.c
+  ElfObject.c
+  main.c
+C:\Users\samsung\source\repos\FinalExam\TestGame\Elf2D.c(78,19): warning C4013: 'fmax'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\samsung\source\repos\FinalExam\TestGame\Elf2D.c(78,24): warning C4013: 'fabs'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\samsung\source\repos\FinalExam\TestGame\Elf2D.c(91,18): warning C4013: 'round'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\samsung\source\repos\FinalExam\TestGame\Elf2D.c(78,19): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\FinalExam\TestGame\main.c(56,9): warning C4013: '_kbhit'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\samsung\source\repos\FinalExam\TestGame\main.c(57,19): warning C4013: '_getch'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\samsung\source\repos\FinalExam\TestGame\main.c(107,39): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\FinalExam\TestGame\main.c(170,31): warning C4244: '함수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  TestGame.vcxproj -> C:\Users\samsung\source\repos\FinalExam\x64\Debug\TestGame.exe

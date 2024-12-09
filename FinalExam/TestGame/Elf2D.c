@@ -70,6 +70,39 @@ void Elf2DDrawLine(int x1, int y1, int x2, int y2, char* Buffer, int width, int 
     }
 }
 
+void Elf2DDrawLine2(float x1, float y1, float x2, float y2, char* Buffer, int width, int height)
+{
+    // 선의 길이와 보간할 단계 수 계산
+    float dx = x2 - x1;
+    float dy = y2 - y1;
+    float steps = fmax(fabs(dx), fabs(dy));  // 더 긴 축을 기준으로 단계 수 결정
+
+    // 각 단계에서 x, y 좌표 변화량 계산
+    float xIncrement = dx / steps;
+    float yIncrement = dy / steps;
+
+    // 시작 좌표 초기화
+    float x = x1;
+    float y = y1;
+
+    for (int i = 0; i <= steps; i++)
+    {
+        // 정수형 좌표로 변환하여 화면 경계 내인지 확인 후 점을 찍음
+        int ix = round(x);
+        int iy = round(y);
+
+
+        if (ix >= 0 && ix < width && iy >= 0 && iy < height)
+        {
+            Buffer[iy * (width + 1) + ix] = '*';
+            Buffer[iy * (width + 1) + ix + 1] = '*';
+        }
+
+        // 다음 좌표로 이동
+        x += xIncrement;
+        y += yIncrement;
+    }
+}
 
 void Elf2DSleep(int ms)
 {

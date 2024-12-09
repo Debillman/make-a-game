@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{44762f6b-096d-4e1c-a09f-a429a57416d6}</ProjectGuid>
+    <ProjectGuid>{8fc006c4-9da6-462d-a99d-99374d7b3bfa}</ProjectGuid>
     <RootNamespace>TestGame</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -127,18 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Elf2D.h" />
+    <ClInclude Include="ElfMath.h" />
+    <ClInclude Include="ElfObject.h" />
+    <ClInclude Include="ElfTime.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="Elf2D.c" />
     <ClCompile Include="ElfMath.c" />
     <ClCompile Include="ElfObject.c" />
     <ClCompile Include="ElfTime.c" />
     <ClCompile Include="main.c" />
-    <ClCompile Include="TestGame.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Elf2D.h" />
-    <ClInclude Include="ElfMath.h" />
-    <ClInclude Include="ElfObject.h" />
-    <ClInclude Include="ElfTime.h" />
+    <ClCompile Include="TestBuffer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
