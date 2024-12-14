@@ -1,0 +1,19 @@
+﻿  Elf2D.c
+C:\Users\samsung\source\repos\FinalExam\TestGame\Elf2D.c(73,16): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\FinalExam\TestGame\Elf2D.c(74,16): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  ElfMath.c
+  ElfObject.c
+  ElfTime.c
+  main.c
+C:\Users\samsung\source\repos\FinalExam\TestGame\main.c(141,58): warning C4244: '함수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\FinalExam\TestGame\main.c(141,70): warning C4244: '함수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\FinalExam\TestGame\main.c(160,24): warning C4244: '함수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\FinalExam\TestGame\main.c(160,40): warning C4244: '함수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\FinalExam\TestGame\main.c(160,56): warning C4244: '함수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\samsung\source\repos\FinalExam\TestGame\main.c(160,72): warning C4244: '함수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  TestBuffer.cpp
+  코드를 생성하고 있습니다.
+  Previous IPDB not found, fall back to full compilation.
+  All 24 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  코드를 생성했습니다.
+  TestGame.vcxproj -> C:\Users\samsung\source\repos\FinalExam\x64\Release\TestGame.exe
